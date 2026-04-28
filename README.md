@@ -279,7 +279,7 @@ Add a sketch with labels showing:
 | `IO Shield Board`    | `1`      | `Provides easy GPIO connections and power distribution`                    |
 | `SG90 Servo Motors`             | `2`      | `Used for basic arm movement (lifting and positioning)`                     |
 | `MG996R Servo Motor`        | `1`      | `Used for high-torque operation (base or gripper control)`                       |
-| `IR Remote`   | `1`      | `[Power]`                             |
+| `IR Remote`   | `1`      | `Used to send control commands wirelessly`                             |
 | `Jumper Wires (M-M, F-M, F-F)`             | `Multiple`      | `Used for electrical connections between components`                 |
 | `External Power Supply` | `1`      | `Provides sufficient power to servo motors for stable operation` |
 
