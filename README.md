@@ -3,7 +3,7 @@
 ## Final Project README
 
 > **Project Weight:** 100%  
-> **Team Size:** 4/3 students  
+> **Team Size:** 4 students  
 > **Project Duration:** 8 hours  
 > **Total Time Available:** 32 effort-hours per team  
 > **Project Type:** Playful, interactive, technology-based experience
