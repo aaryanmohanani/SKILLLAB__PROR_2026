@@ -487,51 +487,11 @@ All documentation will be maintained in a shared GitHub repository, where update
 
 ---
 
-# 13. 2 hour Milestones
+# 13.1 hour Milestones
 
-## 13.1 8-hour Plan
+The project was completed following a structured 8-hour development plan to ensure efficient progress and timely completion. In the initial hour, the team finalized the project idea, defined the core interaction, and prepared basic sketches along with the bill of materials. In the next two hours, all electronic components such as the RP2040, servo motors, IR receiver, and potentiometer were tested individually to ensure proper functionality.
 
-### Bi Hour 1 — Plan and De-risk
-
-Expected outcomes:
-
-- [x] Idea finalized
-- [x] Core interaction decided
-- [x] Sketches made
-- [x] BOM completed
-- [x] Purchase needs identified
-- [ ] Key uncertainty identified
-- [x] Basic feasibility tested
-
-### Bi Hour 2 — Build Subsystems
-
-Expected outcomes:
-
-- [x] Electronics tests completed
-- [ ] CAD / structure planning completed
-- [ ] App UI started if needed
-- [x] Mechanical concept tested
-- [x] Main subsystems partially working
-
-### Bi Hour 3 — Integrate
-
-Expected outcomes:
-
-- [x] Physical body built
-- [x] Electronics integrated
-- [x] Code connected to hardware
-- [ ] App connected if required
-- [x] First playable version exists
-
-### Bi Hour 4 — Refine and Finish
-
-Expected outcomes:
-
-- [x] Technical bugs reduced
-- [x] Playtesting completed
-- [x] Improvements made
-- [x] Documentation completed
-- [x] Final build ready
+The fourth hour was focused on building the mechanical structure using cardboard and mounting the servo motors securely. During the fifth and sixth hours, the electronics were integrated with the structure, and the code was connected to the hardware to enable real-time control using the IR remote and potentiometer. In the seventh hour, the system was thoroughly tested, and issues such as servo instability and IR compatibility were identified and resolved. Finally, in the eighth hour, the project was refined, documentation was completed, and the system was prepared for demonstration. This structured approach ensured smooth development, proper debugging, and a fully functional final output.
 
 ## 13.2  Update Log
 ### 13.2 Work Progress Log
