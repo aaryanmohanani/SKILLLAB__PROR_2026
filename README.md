@@ -337,11 +337,7 @@ All components share a common ground to ensure proper signal reference and stabl
 
 ## 8.3 Circuit Diagram
 
-Insert a hand-drawn or software-made circuit diagram.
-
-**Insert image below:**  
-`[Upload image and link here]`
-<img width="867" height="1156" alt="image" src="ckt diagram.jpeg" />
+![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/ckt_diagram.jpeg?raw=true)
 
 
 # 9. Power Plan
