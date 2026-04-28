@@ -84,8 +84,6 @@ This project presents an IR remote controlled robotic arm designed for industria
 
 The project creates an interactive experience where the user can control the robotic arm in real time, observing how each input from the remote translates into mechanical motion. This demonstrates key concepts of industrial automation such as remote operation, precision control, and repeatability. The system integrates technologies including the RP2040 microcontroller, IR communication, PWM-based servo control, and basic embedded programming. Together, these components form a compact and efficient system that highlights how automation can enhance productivity and safety in industrial environments.
 
-**Response:**  
-`A projected and fully customizable time portal can transform engineering education into an immersive PUBG-style battlefield experience from the comfort of home. In this environment, students can learn engineering concepts by entering a virtual battlefield where challenges, obstacles, and missions are designed around real technical problems. Instead of passively studying theory, learners actively apply concepts such as electronics, coding, sensors, robotics, mechanics, and system design to complete missions, solve problems, and progress through different levels. This approach makes engineering education more interactive, engaging, and practical by combining gaming, simulation, and hands-on problem-solving in a familiar and exciting format.`
 
 ---
 
@@ -126,7 +124,10 @@ What makes your project original?
 ## 4.1 User Journey 
 
 Describe exactly how a user will use the project.Make it a story
-**Response:**  
+
+-->A user approaches the RoboForge system and picks up the IR remote placed beside the robotic arm. After switching on the system, the arm comes to its initial resting position, ready for operation. The user then presses different buttons on the remote to control the movement of the arm. As each button is pressed, the robotic arm responds instantly—rotating, lifting, or adjusting its gripper position. The user can carefully position the arm as if performing a painting task, simulating how industrial robotic arms spray or apply paint on surfaces.
+
+As the user continues interacting, they begin to understand how each control affects the arm’s motion, gaining a sense of precision and coordination. The experience becomes engaging as the user tries to mimic real industrial painting movements, adjusting angles and positions for better control. By the end of the interaction, the user not only enjoys controlling the robotic arm but also gains insight into how automation works in industrial environments, making the system both educational and interactive.
 
                                                   |
 
