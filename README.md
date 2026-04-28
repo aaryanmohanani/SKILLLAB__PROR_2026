@@ -275,13 +275,13 @@ Add a sketch with labels showing:
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
-| `[ESP32]`                 | `1`      | `[Main controller]`                   |
-| `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
-| `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
-| `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
-| `[Li Ion Battery Pack]`   | `2`      | `[Power]`                             |
-| `[Projector]`             | `1`      | `[Display obstacles]`                 |
-| `Camera (Webcam / Phone)` | `1`      | `[Tracks car position using markers]` |
+| `RP2040 (Vicharak Shrike Lite)`                 | `1`      | `Main controller for processing inputs and controlling the robotic arm`                   |
+| `IO Shield Board`    | `1`      | `Provides easy GPIO connections and power distribution`                    |
+| `SG90 Servo Motors`             | `2`      | `Used for basic arm movement (lifting and positioning)`                     |
+| `MG996R Servo Motor`        | `1`      | `Used for high-torque operation (base or gripper control)`                       |
+| `IR Remote`   | `1`      | `[Power]`                             |
+| `Jumper Wires (M-M, F-M, F-F)`             | `Multiple`      | `Used for electrical connections between components`                 |
+| `External Power Supply` | `1`      | `Provides sufficient power to servo motors for stable operation` |
 
 ## 8.2 Wiring Plan
 
