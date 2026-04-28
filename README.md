@@ -263,33 +263,12 @@ There is no mobile or web app involved. The system works entirely through IR rem
 
 ## 7.1 Concept Sketch
 
-Add an early sketch of the full idea.
-
-**Insert image below:**  
-`[Upload image and link here]`
-
-Example:
-
-```md
-
-```
-
+![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/Robotic_Arm_Ideas.jpeg?raw=true)
 
 
 ## 7.2 Labeled Build Sketch
 
-Add a sketch with labels showing:
-
-- structure,
-- electronics placement,
-- user touch points,
-- moving parts,
-- output elements.
-
-**Insert image below:**  
-`[Upload image and link here]`
-
-
+![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/Labeled_Build_Sketch.png?raw=true)
 ## 7.3 Approximate Dimensions
 
 | Dimension        | Value   |
@@ -397,25 +376,6 @@ There is no wireless or network communication. All control is done locally throu
 If no button is pressed, the arm holds its current position. A specific button can be assigned to reset all servos to their default (home) position.
 
 ## 10.3 Code Flowchart
-
-Insert a flowchart showing your code logic.
-
-Suggested sequence:
-
-- start,
-- initialize,
-- wait for input,
-- read input,
-- decision,
-- trigger output,
-- repeat or reset,
-- error handling.
-
-**Insert image below:**  
-<img width="1600" height="1200" alt="image" src="" />
-<img width="1600" height="1200" alt="image" src="" />
-
-
 
 
 # 11. Bill of Materials
