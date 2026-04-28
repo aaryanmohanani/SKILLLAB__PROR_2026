@@ -63,10 +63,10 @@ By the final review, this README should clearly show:
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `Aaryan Mohanani` | `[Documentation/PPT]` | `Project & Application Help`  | `Documentation, Gift of Gab `|
-| `Hussain Patanwala`  | `[Documentation/PPT]`   | `[Making the Project Skeleton(Robotic Arm)]`     | `Material Handling, Hardware`    |
-| `Jaisingh Sangtani` | `[Coding]` | `Project Implementation`  | `Documentation, Gift of Gab `|
-| `Yogesh Thankar`  | `[Project Implementation]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Aaryan Mohanani` | `Documentation/PPT` | `Project & Application Help`  | `Documentation, Presentation, Communication`|
+| `Hussain Patanwala`  | `Documentation/PPT`   | `Making the Project Skeleton(Robotic Arm)`     | `Material Handling, Mechanical Assembly`    |
+| `Jaisingh Sangtani` | `Coding` | `Project Implementation`  | `Programming, Logic Building, Debugging`|
+| `Yogesh Thankar`  | `Project Implementation`   | `Coding`     | `Implementation, Testing, System Integration`    |
 
 ## 1.3 Project Title
 
