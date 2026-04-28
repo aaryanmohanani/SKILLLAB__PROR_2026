@@ -701,8 +701,6 @@ What would you improve next?
 
 -->If given one more hour, we would improve the stability and finishing of the robotic arm, optimize servo movements for smoother operation, and enhance the overall appearance of the project.
 
-` `
-
 ---
 
 # 19. Final Submission Checklist
