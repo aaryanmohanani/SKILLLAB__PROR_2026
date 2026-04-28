@@ -148,8 +148,11 @@ What is the smallest version of this project that still delivers the core experi
 -->The smallest version of this project that still delivers the core experience includes:
 
 1)A simple cardboard robotic arm structure.
+
 2)At least 2 servo motors (one for arm movement and one for gripper).
+
 3)Basic IR remote control for movement.
+
 4)Predefined motions (up/down, open/close).
 
 This version allows the user to experience remote-controlled mechanical movement, which is the core idea of the project.
@@ -162,10 +165,15 @@ What features are nice to have but not essential?
 -->These are additional features that improve the project but are not essential:
 
 1)Adding more servo motors for extra degrees of freedom (base rotation, wrist movement).
+
 2)Smoother and more precise control (fine angle adjustments).
+
 3)Adding a paint mechanism simulation (spray bottle / marker attachment).
+
 4)Improved structure using stronger materials.
+
 5)Preset automated movements (record and replay actions).
+
 6)LED indicators for system status.
 
 ---
