@@ -524,7 +524,7 @@ Expected outcomes:
 
 What is the single biggest uncertainty in your project at this stage?
 
-**Response:**  
+-->The biggest uncertainty right now is achieving smooth and stable movement of the robotic arm using servo motors. Since the structure is made of cardboard, maintaining proper balance and alignment while handling load is challenging. Additionally, ensuring accurate response from the IR remote without delay or signal loss is also a key uncertainty.
 
 
 ---
@@ -535,8 +535,10 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing     | How You Will Test It                                                                 | Success Condition                                                                                    |
 | ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| `[Wifi connection]`    | `[Check if motor spins via app button]`                                              | `[Both motors accurately respond to wifi signals]`                                                   |
-                       |
+| `IR Remote Control`    | `Press buttons and observe servo movement`                                              | `All servos respond correctly to assigned buttons`                                                   |
+| `Servo Movement`    | `Move arm in all directions`                                              | `Smooth and stable motion without jitter`                                                 
+| `Power Stability`    | `Run all servos together`                                              | `No reset or power drop`                                                   |
+                       
 ## 15.2 Testing and Debugging Log
 
 | Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
@@ -610,21 +612,41 @@ Suggested images:
 
 Describe the final version of your project.
 
-**Response:**  
+-->The final project is an IR remote-controlled robotic arm built using the RP2040 microcontroller. The structure is made using lightweight cardboard, and movement is achieved using SG90 and MG996R servo motors. The arm can perform basic pick-and-place and painting-like motions by responding to commands from an IR remote.
+
+The system demonstrates how simple hardware components can be used to simulate industrial robotic arm applications in a cost-effective and interactive way.
 
 
 ## 17.2 What Works Well
 
+-->
+
+1)Servo motors respond accurately to IR remote inputs.
+
+2)Robotic arm structure is lightweight and functional.
+
+3)Easy and intuitive control using remote.
+
+4)Fast assembly and working prototype within limited time.
 
 
 ## 17.3 What Still Needs Improvement
 
+-->
+
+1)Stability of the cardboard structure under load.
+
+2)Precision and smoothness of movements.
+
+3)Wire management and overall finishing.
+
+4)More degrees of freedom for advanced motion.
 
 ## 17.4 What Changed From the Original Plan
 
 How did the project change from the initial idea?
 
-**Response:**  
+-->Initially, the project idea involved more complex systems using ESP32, motors, and wireless control. However, due to time constraints and hardware restrictions, the project was simplified to a robotic arm using RP2040 and IR remote control. This change allowed faster implementation while still demonstrating core concepts of robotics and control systems.
 
 
 ---
@@ -637,8 +659,9 @@ What did your team do well?
 What slowed you down?  
 How well did you manage time, tasks, and responsibilities?
 
-**Response:**  
+-->The team worked efficiently by dividing tasks such as hardware setup, coding, and documentation. Communication was clear, and everyone contributed to completing the project on time.
 
+Some delays occurred during initial setup and servo calibration, but they were resolved quickly through teamwork. Overall, time and responsibilities were managed effectively.
 
 ## 18.2 Technical Reflection
 
@@ -650,8 +673,9 @@ What did you learn about:
 - fabrication,
 - integration?
 
-**Response:**  
+-->We learned about interfacing servo motors with a microcontroller, handling IR signals, and managing power requirements. We also gained experience in debugging hardware issues and ensuring proper connections.
 
+Additionally, we understood the importance of calibration and synchronization between hardware and code.
 
 ## 18.3 Design Reflection
 
@@ -664,14 +688,16 @@ What did you learn about:
 - understanding,
 - iteration?
 
-**Response:**  
+-->We learned how to design a functional structure using simple materials like cardboard. The importance of balance, weight distribution, and joint placement became clear during the build process.
+
+We also learned that iterative improvements are necessary to achieve better performance and usability.
 
 
 ## 18.4 If You Had One More hour
 
 What would you improve next?
 
-**Response:**  
+-->If given one more hour, we would improve the stability and finishing of the robotic arm, optimize servo movements for smoother operation, and enhance the overall appearance of the project.
 
 ` `
 
