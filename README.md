@@ -410,17 +410,34 @@ Suggested sequence:
 
 Explain why you selected your main materials and components.
 
-**Response:**  
-`DC motors (BO motors) were chosen instead of servos or steppers because the system requires continuous rotation for movement rather than precise angular control (Previously, we were considering using steppers as we were planning on tracking movement on the ESP using its relative position from an origin, but since we're using a camera now, this is not required). A motor driver (L298N) was used to allow bidirectional control and speed variation using PWM.`
+-->The RP2040 (Shrike Lite) was selected as the main controller because it provides stable performance, sufficient GPIO pins, and is easy to program using the Arduino IDE. It is well-suited for controlling multiple servo motors and handling real-time input from sensors like the IR receiver.
+
+The SG90 servo motors were chosen for lightweight movements due to their low cost, ease of use, and adequate torque for small mechanical actions. For heavier or load-bearing movement, the MG996R servo motor was selected because of its high torque capability, making it suitable for more demanding motion requirements.
+
+An IR remote and receiver module was used for input control because it provides a simple, reliable, and wireless method of user interaction without the complexity of WiFi or Bluetooth communication.
+
+The IO shield board was included to simplify wiring and ensure stable connections between components, reducing the chances of loose connections during testing.
+
+Jumper wires were used for flexible and quick prototyping, allowing easy modification of connections during development.
+
+An external 5V power supply was used to power the servo motors separately, as high-torque servos like the MG996R require stable current that cannot be reliably provided by the microcontroller alone.
+
+Overall, the selected components provide a balance of simplicity, reliability, cost-effectiveness, and sufficient performance for the project requirements.
 
 
 ## 11.3 Items You chose
 
-| Item                 | Why Needed               | Purchase Link | Latest Safe Date to Procure | Status       |
-| -------------------- | ------------------------ | ------------- | --------------------------- | ------------ |
-| `BO Motors + Wheels` | `Drive system for car`   | `robu.in`     | `15th April`                | `[Received]` |
-| `Buck Converter`     | `Stable power for ESP32` | `local store` | `before testing`            | `[Received]` |
-| `Li-ion Batteries`   | `Portable power`         | `local store` | `before testing`            | `Recieved`   |
+## 11.3 Items You Chose
+
+| Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
+|------|-----------|-------------|---------------------------|--------|
+| `RP2040 (Shrike Lite)` | `Main controller for system` | `Provided in lab kit` | `N/A` | `[Available]` |
+| `SG90 Servo Motors (2)` | `Lightweight movement control` | `robu.in / Amazon` | `Before testing` | `[Purchased]` |
+| `MG996R Servo Motor (1)` | `High torque movement` | `robu.in / Amazon` | `Before testing` | `[Purchased]` |
+| `IR Remote + Receiver` | `User input control` | `Provided in kit` | `N/A` | `[Available]` |
+| `IO Shield Board` | `Easy and stable wiring` | `Provided in kit` | `N/A` | `[Available]` |
+| `Jumper Wires` | `Connections between components` | `Provided in kit` | `N/A` | `[Available]` |
+| `External 5V Power Supply` | `Stable power for servos` | `Local store / adapter` | `Before testing` | `[Purchased]` |
 
 ## 11.4 Budget Summary
 
@@ -533,9 +550,21 @@ Expected outcomes:
 
 ## 14.1 Risk Register
 
-| Risk                                                            | Type         | Likelihood | Impact   | Mitigation Plan                                                                       | Owner                |
-| --------------------------------------------------------------- | ------------ | ---------- | -------- | ------------------------------------------------------------------------------------- | -------------------- |
-| WiFi connection between laptop and ESP32 becomes unstable       | `Technical`  | `Medium`   | `High`   | Keep ESP32 close, ensure stable power supply, reduce network load, add fail-safe stop | `[Gopal]`           |
+## 14. Risks and Unknowns
+
+### 14.1 Risk Register
+
+## 14. Risks and Unknowns
+
+### 14.1 Risk Register
+
+| Risk | Type | Likelihood | Impact | Mitigation Plan | Owner |
+|------|------|-----------|--------|------------------|--------|
+| `IR signal not detected properly` | `Technical` | `Medium` | `Medium` | `Ensure proper alignment, avoid obstacles, test range before demo` | `Jaisingh Sangtani` |
+| `Servo motors jitter or behave unpredictably` | `Technical` | `Medium` | `High` | `Use stable 5V external supply, avoid powering from board, check wiring` | `Yogesh Thankar` |
+| `MG996R servo draws high current causing instability` | `Technical` | `High` | `High` | `Use dedicated 5V supply, test under load, ensure proper grounding` | `Jaisingh Sangtani` |
+| `Loose jumper wire connections` | `Mechanical` | `Medium` | `Medium` | `Secure connections, use IO shield, double-check before testing` | `Hussain Patanwala` |
+| `IR code mismatch or no response` | `Software` | `Low` | `High` | `Verify IR codes, use serial monitor, debug input signals` | `Aaryan Mohanani` |
 
 
 ## 14.2 Biggest Unknown Right Now
