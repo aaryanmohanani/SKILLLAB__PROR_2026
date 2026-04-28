@@ -218,13 +218,45 @@ Include:
 - physical structure,
 - app interaction if any.
 
-**Response:**  
+-->The system is a robotic arm controlled using an IR remote, with the RP2040 (Shrike Lite) acting as the main controller.
+
+Input:
+The user provides input through an IR remote. The IR receiver module detects the signals and sends digital input to the RP2040. (Earlier a potentiometer was considered, but it was removed for simplicity and reliability.)
+
+Processing:
+The RP2040 processes the received IR signals, identifies which button is pressed, and maps each input to a specific servo movement. The logic ensures correct angle control and smooth motion using PWM signals.
+
+Output:
+The system outputs movement through three servo motors:
+
+MG996R for the base rotation (high torque),
+SG90 servos for arm segments (precise movement).
+
+These servos rotate to specific angles based on user commands, enabling controlled movement of the robotic arm.
+
+Physical Structure:
+The robotic arm is built using cardboard, designed with multiple joints. Servos are mounted at these joints to allow rotational movement. The structure is lightweight but reinforced for stability.
+
+Power System:
+An external 5V power supply powers the servo motors to ensure stable performance, while all components share a common ground for proper operation.
+
+App Interaction:
+There is no mobile or web app involved. The system works entirely through IR remote control, making it simple and user-friendly.
 
 ## 6.3 Input / Output Map
 
-| System Part                              | Type            | What It Does                                                               |
+## 6.3 Input / Output Map
 
-
+| System Part | Type | What It Does |
+|-------------|------|--------------|
+| `IR Remote` | `Input` | `Sends user commands wirelessly (button presses)` |
+| `IR Receiver Module` | `Input` | `Receives IR signals and converts them to digital signals for RP2040` |
+| `RP2040 (Shrike Lite)` | `Processing` | `Processes input signals and generates PWM outputs for servo control` |
+| `MG996R Servo Motor` | `Output` | `Controls base rotation of robotic arm (high torque movement)` |
+| `SG90 Servo Motor #1` | `Output` | `Controls first arm segment movement` |
+| `SG90 Servo Motor #2` | `Output` | `Controls second arm segment movement` |
+| `External 5V Power Supply` | `Power` | `Provides stable power to servo motors` |
+| `Common Ground` | `Support` | `Ensures all components share a reference voltage for proper operation` |
 ---
 
 # 7. Sketches and Visual Planning
@@ -256,7 +288,7 @@ Add a sketch with labels showing:
 
 **Insert image below:**  
 `[Upload image and link here]`
-<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/95637f31-b4e7-4427-a9e1-4b63fbeb0ac5" />
+
 
 ## 7.3 Approximate Dimensions
 
@@ -536,14 +568,18 @@ Expected outcomes:
 - [x] Final build ready
 
 ## 13.2  Update Log
+### 12.2 Work Progress Log
 
-| Week   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
-| ------ | -------------- | ---------------------- | -------------- | -------------- |
-| Week 1 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-
+| Time | Planned Goal | What Actually Happened | What Changed | Next Steps |
+|------|--------------|----------------------|--------------|------------|
+| `Hour 1` | `Plan design and gather components` | `Finalized robotic arm design and collected all parts` | `Simplified structure for faster build` | `Start fabrication` |
+| `Hour 2` | `Begin structure fabrication` | `Cut and assembled base and arm using cardboard` | `Reinforced weak joints with double layers` | `Mount servos` |
+| `Hour 3` | `Mount servo motors` | `Installed SG90 and MG996R servos in joints` | `Adjusted positions for better movement` | `Start wiring` |
+| `Hour 4` | `Complete wiring` | `Connected servos and IR receiver to RP2040` | `Used IO shield for stable connections` | `Test individual components` |
+| `Hour 5` | `Test servo movement` | `Checked servo control using basic code` | `Fixed power issue using external 5V` | `Integrate IR control` |
+| `Hour 6` | `Implement IR control` | `Mapped remote buttons to servo movement` | `Refined command mapping` | `Full system testing` |
+| `Hour 7` | `Test complete system` | `Ran full robotic arm using IR remote` | `Improved response and reduced delay` | `Final adjustments` |
+| `Hour 8` | `Finalize project` | `Completed integration and testing` | `Minor improvements in wiring and stability` | `Ready for demo` |
 ---
 
 # 14. Risks and Unknowns
@@ -580,16 +616,28 @@ What is the single biggest uncertainty in your project at this stage?
                        
 ## 15.2 Testing and Debugging Log
 
-| Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
-| ------------- | ------------------------------------- | ------------ | --------------------------------------------- | -------------------- | ---------------------------------------------- |
-| `18th April`  | `Car not balancing properly`          | `Mechanical` | `Add low-friction caster support to one side` | `Worked`             | `improve caster structure`                     |
+### 15.2 Testing and Debugging Log
+
+| Time | Problem Found | Type | What You Tried | Result | Next Action |
+|------|--------------|------|----------------|--------|-------------|
+| `Hour 1` | `Servo not moving due to potentiometer issue` | `Technical` | `Removed faulty potentiometer and directly tested servo` | `Worked` | `Avoid unnecessary components` |
+| `Hour 2` | `IR remote and receiver not compatible` | `Technical` | `Replaced with compatible IR remote-receiver pair` | `Worked` | `Verify component compatibility before use` |
+| `Hour 3` | `Initial servo testing` | `Testing` | `Checked basic servo movement using code` | `Worked` | `Proceed to integration` |
+| `Hour 4` | `IR signal reading setup` | `Software` | `Configured IR library and tested signal input` | `Worked` | `Map remote buttons` |
+| `Hour 5` | `Servo control via IR` | `Integration` | `Linked IR input to servo movement` | `Worked` | `Refine control logic` |
+| `Hour 6` | `Response optimization` | `Software` | `Improved code execution and reduced delay` | `Worked` | `Test consistency` |
+| `Hour 7` | `System stability check` | `Testing` | `Ran multiple trials for reliability` | `Worked` | `Prepare for final demo` |
+| `Hour 8` | `Final system integration` | `Integration` | `Tested complete system together` | `Worked` | `Ready for demo` |
 
 
-## 15.3 Playtesting Notes
+### 15.3 Playtesting Notes
 
-| Tester      | What They Did                        | What Confused Them                    | What They Enjoyed                         | What You Will Change                          |
-| ----------- | ------------------------------------ | ------------------------------------- | ----------------------------------------- | --------------------------------------------- |
-| `Gopal` | `Tried navigating through obstacles` | `Some obstacles ewren't clear enough` | `Liked projection + real car interaction` | `Add a slight red highlight around obstacles` |
+| Tester | What They Did | What Confused Them | What They Enjoyed | What You Will Change |
+|--------|--------------|--------------------|-------------------|----------------------|
+| `Aaryan Mohanani` | `Tested full system control using IR remote` | `Slight delay in response` | `Smooth servo control` | `Optimize code for faster response` |
+| `Yogesh Thankar` | `Tested power stability and servo movement` | `Servo jitter at low voltage` | `Stable motion after fix` | `Ensure consistent power supply` |
+| `Jaisingh Sangtani` | `Tested IR input mapping and button response` | `Button mapping confusion initially` | `Accurate control after mapping` | `Label controls clearly` |
+| `Hussain Patanwala` | `Tested physical setup and wiring` | `Wire placement clarity` | `Clean setup after adjustments` | `Improve cable management` |
 
 
 ---
@@ -610,22 +658,19 @@ Include:
 - finishing,
 - revisions.
 
-**Response:**  
-`The fabrication process involved designing, manufacturing, assembling, and refining both the physical structure and electronic integration of the system.`
+-->The robotic arm was fabricated using lightweight cardboard as the primary structural material. The process began with marking and cutting the required shapes for the base, arm segments, and gripper using a cutter and scale to ensure straight and accurate edges. Multiple layers of cardboard were used in critical sections to increase strength and durability.
 
-`Design (CAD Modeling):
-The initial model was created using CAD software, where components were designed based on the actual dimensions of the electronic parts. This ensured accurate fitting and minimized errors during assembly.
-Cutting (Laser Cutting):
-The designed parts were fabricated using laser cutting techniques. Sheets were cut precisely according to the CAD model to create the structural base and mounts for components.`
+No 3D printing was used in this project, as the focus was on low-cost and rapid prototyping using easily available materials.
 
-`Components were fixed using adhesives and mechanical supports. Certain parts were intentionally kept modular (not permanently fixed) to allow easy replacement and modification of electronics.
-Surface Finishing:
-Some parts were sanded to smooth rough edges after cutting. Sawdust mixed with adhesive was used to fill gaps and uneven edges, improving structural finish. The final structure was then painted for better aesthetics and durability.`
+During assembly, the arm segments were connected using servo motors placed at the joints. The servos were fixed in position using glue and tight fitting slots in the cardboard to ensure stability. The base structure was reinforced to support the movement and weight of the arm.
 
-`Environment Setup (Dark Room Fabrication):
-To enhance projection visibility, a controlled dark environment was created using Z-boards, paper sheets, and bedsheets. This minimized external light interference and improved projection clarity.
-Revisions and Iterations:
-Multiple adjustments were made throughout the process, including refining alignment, improving structural stability, repositioning components, and optimizing the interaction between the physical car and projected environment.`
+For fastening, hot glue and adhesive were used to secure components, while ensuring that moving joints were not restricted. Servo horns were properly aligned with the cardboard parts to allow smooth rotational movement.
+
+The wiring was done using jumper wires connected through the IO shield board to the RP2040. Care was taken to organize the wires neatly to avoid tangling and accidental disconnections. An external 5V power supply was used to power the servo motors.
+
+In terms of finishing, edges were cleaned, excess glue was removed, and the structure was adjusted for better balance and appearance. The arm was tested multiple times to ensure smooth motion.
+
+Several revisions were made during the build process, including improving joint alignment, reinforcing weak sections, and adjusting servo positions for better control and stability.
 
 ## 16.2 Build Photos
 
