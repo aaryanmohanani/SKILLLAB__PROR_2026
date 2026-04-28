@@ -320,8 +320,7 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform                | Purpose                                        |
 | ------------------------------ | ---------------------------------------------- |
-| `Arduino IDE`                | `Used for programming the RP2040 microcontroller, controlling servo motors, and implementing IR remote-based robotic arm movement`                                |
-|                                |                                                |
+| `Arduino IDE`                | `Used for programming the RP2040 microcontroller, controlling servo motors, and implementing IR remote-based robotic arm movement`                                | 
 
 ## 10.2 Software Logic
 
