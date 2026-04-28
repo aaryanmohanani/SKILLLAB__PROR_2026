@@ -72,7 +72,7 @@ By the final review, this README should clearly show:
 
 `"IR-Remote Controlled Robotic Arm For Painting Applications in the Industry (Spray Paint/Normal Painting) using RP2040"`
 
-
+https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/ChatGPT_Generated_Image_logo.png
 
 ## 1.4 One-Line Pitch
 
