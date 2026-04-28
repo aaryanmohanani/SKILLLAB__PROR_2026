@@ -72,7 +72,7 @@ By the final review, this README should clearly show:
 
 `"IR-Remote Controlled Robotic Arm For Painting Applications in the Industry (Spray Paint/Normal Painting) using RP2040"`
 
-https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/ChatGPT_Generated_Image_logo.png
+![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/ChatGPT_Generated_Image_logo.png?raw=true)
 
 ## 1.4 One-Line Pitch
 
@@ -269,6 +269,7 @@ There is no mobile or web app involved. The system works entirely through IR rem
 ## 7.2 Labeled Build Sketch
 
 ![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/Labeled_Build_Sketch.png?raw=true)
+
 ## 7.3 Approximate Dimensions
 
 | Dimension        | Value   |
@@ -319,14 +320,14 @@ All components share a common ground to ensure proper signal reference and stabl
 ![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/ckt_diagram.jpeg?raw=true)
 
 
-# 9. Power Plan
+## 9. Power Plan
 
-| Question         | Response                                                                                                                                          |"
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Power source     | `External 5V Power Supply`                                                                                                                           |
-| Voltage required | `5V for servo motors and RP2040 (via USB or regulated supply)`                                                                  |
-| Current concerns | `Servo motors (especially MG996R) draw high current, which can cause voltage drops if powered directly from the microcontroller`                                       |
-| Safety concerns  | `Ensure common ground between power supply and RP2040, avoid overcurrent, use stable 5V supply, and secure all connections to prevent short circuits |
+| Question           | Response                                                                 |
+| ------------------ | ------------------------------------------------------------------------ |
+| Power source       | `External 5V Power Supply`                                               |
+| Voltage required   | `5V for servo motors and RP2040 (regulated supply)`                      |
+| Current concerns   | `Servo motors draw high current → may cause voltage drop if unstable`    |
+| Safety concerns    | `Ensure proper wiring, avoid short circuits, use common ground, stable supply` |
 
 ---
 
@@ -377,6 +378,7 @@ If no button is pressed, the arm holds its current position. A specific button c
 
 ## 10.3 Code Flowchart
 
+![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/flowchart.png?raw=true)
 
 # 11. Bill of Materials
 
@@ -468,12 +470,12 @@ All documentation will be maintained in a shared GitHub repository, where update
 
 | Area                 | Main Owner | Support Owner |
 | -------------------- | ---------- | ------------- |
-| Concept              | `[Gopal]`  | `[Kader]`    |
-| Electronics          | `[]`       | `[]`     |
-| Coding               | `[]`       | `[]`     |
-| Mechanical build     | `[]`       | `[]`    |
-| Testing              | `[]`       | `[]`    |
-| Documentation        | `[]`       | `[]`     |
+| Concept              | `Yogesh`  | `Jaisingh`    |
+| Electronics          | `Jaisingh`       | `Yogesh`     |
+| Coding               | `Jaisingh`       | `Yogesh`     |
+| Mechanical build     | `Hussain`       | `Yogesh`    |
+| Testing              | `Aaryan`       | `Jaisingh`    |
+| Documentation        | `Aaryan`       | `Yogesh`     |
 
 ---
 
@@ -524,7 +526,7 @@ Expected outcomes:
 - [x] Final build ready
 
 ## 13.2  Update Log
-### 12.2 Work Progress Log
+### 13.2 Work Progress Log
 
 | Time | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |------|--------------|----------------------|--------------|------------|
