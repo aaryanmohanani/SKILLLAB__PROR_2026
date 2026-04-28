@@ -57,34 +57,34 @@ By the final review, this README should clearly show:
 
 ## 1.1 Studio / Group Name
 
-`Project^2`
+`SKILLLAB_PROR-2026-RoboForge`
 
 ## 1.2 Team Members
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `Gopalakrishnan` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `KAder Shaikh`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Aaryan Mohanani` | `[Documentation/PPT]` | `Project & Application Help`  | `Documentation, Gift of Gab `|
+| `Hussain Patanwala`  | `[Documentation/PPT]`   | `[Making the Project Skeleton(Robotic Arm)]`     | `Material Handling, Hardware`    |
+| `Jaisingh Sangtani` | `[Coding]` | `Project Implementation`  | `Documentation, Gift of Gab `|
+| `Yogesh Thankar`  | `[Project Implementation]`   | `[Coding]`     | `Material Handling, Hardware`    |
 
 ## 1.3 Project Title
 
-`"Project Project"`
+`"IR-Remote Controlled Robotic Arm For Painting Applications in the Industry (Spray Paint/Normal Painting) using RP2040"`
 
-`(because Project-or)`
 
-<img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
+
+
 
 ## 1.4 One-Line Pitch
 
-`A projected, fully customizable time portal where engineering education is done through PUBG battlefield in the comfort of our home`
+`A low-cost, IR-controlled robotic arm powered by RP2040 that enables precise, remote-operated industrial painting with improved safety and efficiency.`
 
 ## 1.5 Expanded Project Idea
 
-In 1–2 paragraphs, explain:
+This project presents an IR remote controlled robotic arm designed for industrial painting applications using the RP2040 microcontroller. The system uses servo motors to control multiple joints of the arm, allowing it to perform precise movements required for spray painting or brush-based painting tasks. An IR remote is used to wirelessly control the arm’s motion, enabling the user to operate it from a safe distance. The goal is to simulate a low-cost automation solution that can be used in industries to reduce manual effort and improve consistency in painting operations.
 
-- what your project is,
-- what kind of experience it creates,
-- what technologies are involved.
+The project creates an interactive experience where the user can control the robotic arm in real time, observing how each input from the remote translates into mechanical motion. This demonstrates key concepts of industrial automation such as remote operation, precision control, and repeatability. The system integrates technologies including the RP2040 microcontroller, IR communication, PWM-based servo control, and basic embedded programming. Together, these components form a compact and efficient system that highlights how automation can enhance productivity and safety in industrial environments.
 
 **Response:**  
 `A projected and fully customizable time portal can transform engineering education into an immersive PUBG-style battlefield experience from the comfort of home. In this environment, students can learn engineering concepts by entering a virtual battlefield where challenges, obstacles, and missions are designed around real technical problems. Instead of passively studying theory, learners actively apply concepts such as electronics, coding, sensors, robotics, mechanics, and system design to complete missions, solve problems, and progress through different levels. This approach makes engineering education more interactive, engaging, and practical by combining gaming, simulation, and hands-on problem-solving in a familiar and exciting format.`
@@ -95,18 +95,9 @@ In 1–2 paragraphs, explain:
 
 ## 2.1 Experience, Not Social Problem
 
-This module does **not** require your project to solve a large social problem.
+This project focuses on creating an interactive and engaging experience rather than solving a large social problem. The IR-controlled robotic arm acts as a playful yet functional machine that allows users to control movements in real time and perform painting actions. It combines elements of a toy, a kinetic artifact, and an industrial simulation, making it both entertaining and educational.
 
-You are allowed to build:
-
-- toys,
-- games,
-- interactive objects,
-- playful machines,
-- kinetic artifacts,
-- humorous devices,
-- strange but delightful experiences,
-- things that are entertaining to use or watch.
+The experience is designed to be visually satisfying and interactive, where users can remotely operate the arm and observe precise movements translating into painting actions. It highlights the joy of controlling a mechanical system while also demonstrating the principles of automation in a simplified and accessible way.
 
 
 
@@ -118,14 +109,14 @@ List what inspired the project.
 
 | Source Type | Title / Link                                                        | What Inspired You                                                                         |
 | ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `[Video]`   | `https://www.instagram.com/reel/DW4CT7WCDry/?igsh=cXg3dzAxYmdncDBo` | `How projection mapping can be used to create interactive digital + physical experiences` |
-|             |                                                                     |                                                                                           |
+| `[Chatgpt]`   | `(https://chatgpt.com/share/69f043bc-d244-8322-ac57-1588f2ae686a)` | 'Helped in generating the project idea, refining the concept, and assisting with implementation logic' |
+|   '[Chatgpt]'          |   (https://chatgpt.com/share/69f047fb-762c-8321-8e0d-087596900b7d)                                                                  | 'Helped in structuring the report, refining explanations, and organizing content clearly'                                                                                          |
 |             |                                                                     |                                                                                           |
 
 ## 3.2 Original Twist
 
 What makes your project original?
-
+-->The originality of this project lies in combining industrial robotic arm concepts with a low-cost, hands-on, and interactive setup using cardboard and simple components. Instead of focusing purely on automation, the system emphasizes user interaction through an IR remote, turning it into a controllable experience. The use of accessible materials like cardboard and basic electronics makes it a playful yet functional prototype that bridges the gap between industrial machinery and creative experimentation.
 **Response:**  
 
 
