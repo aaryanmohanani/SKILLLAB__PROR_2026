@@ -307,10 +307,10 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Question         | Response                                                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Power source     | `Battery (Li-ion pack)`                                                                                                                           |
-| Voltage required | `~6–8.4V for motors (via driver), stepped down to 5V for ESP32 (buck converter)`                                                                  |
-| Current concerns | `Motors can draw high current under load, which may cause voltage drops affecting ESP32 and WiFi stability`                                       |
-| Safety concerns  | `Avoid over-discharging Li-ion batteries, ensure proper voltage regulation, prevent short circuits, and secure wiring to avoid loose connections` |
+| Power source     | `External 5V Power Supply`                                                                                                                           |
+| Voltage required | `5V for servo motors and RP2040 (via USB or regulated supply)`                                                                  |
+| Current concerns | `Servo motors (especially MG996R) draw high current, which can cause voltage drops if powered directly from the microcontroller`                                       |
+| Safety concerns  | `Ensure common ground between power supply and RP2040, avoid overcurrent, use stable 5V supply, and secure all connections to prevent short circuits |
 
 ---
 
@@ -408,18 +408,18 @@ Explain why you selected your main materials and components.
 
 | Budget Item           | Estimated Cost              |
 | --------------------- | ---------------------------:|
-| Electronics           | `[400]`                     |
-| Mechanical parts      | `[200]`                     |
-| Fabrication materials | `[0 (Available on campus)]` |
+| Electronics (RP2040, IO Shield, 2× SG90, 1× MG996R, IR Remote, Jumper Wires, 5V Supply)         | `[1200]`                     |
+| Mechanical Parts (Cardboard structure, joints, servo mounts)      | `[200]`                     |
+| Fabrication materials (Glue, tape, basic tools – available in lab) | `[0 (Available on campus)]` |
 | Purchased extras      | `[0]`                       |
 | Contingency           | `[300]`                     |
-| **Total**             | `[900]`                     |
+| **Total**             | `[1700]`                     |
 
 ## 11.5 Budget Reflection
 
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
-**Response:**  
+-->The overall cost of the project is already kept low by using components available in the lab. However, if the cost needs to be reduced further, certain optimizations can be made. The MG996R servo motor can be replaced with another SG90 servo if high torque is not strictly required. The external power supply can be shared among team members instead of using a dedicated unit. Additionally, fabrication materials like cardboard, glue, and wiring can be reused or shared from common lab resources. This approach ensures that the project remains cost-effective while still maintaining its core functionality.
 
 ---
 
@@ -427,17 +427,11 @@ If your cost is too high, what can be simplified, removed, substituted, or share
 
 ## 12.1 Team Working Agreement
 
-Write how your team will work together.
+The team will work collaboratively by dividing tasks based on individual strengths. The mechanical structure of the robotic arm will be handled by members skilled in fabrication and assembly, while coding and electronics integration will be managed by members comfortable with programming and wiring. Documentation and presentation tasks will be assigned to members with strong communication and organizational skills.
 
-Include:
+Decisions will be made through quick group discussions, ensuring that all members contribute their ideas while keeping time constraints in mind. Progress will be checked regularly after each major step, such as structure completion, wiring, and testing. If any task is delayed, responsibilities will be redistributed among team members to ensure timely completion of the project.
 
-- how tasks are divided,
-- how decisions are made,
-- how progress will be checked,
-- what happens if a task is delayed,
-- how documentation will be maintained.
-
-**Response:**  
+All documentation will be maintained in a shared GitHub repository, where updates, code, and reports will be uploaded regularly. This ensures transparency, easy access, and proper tracking of the project development process.
 
 
 ## 12.2 Task Breakdown
