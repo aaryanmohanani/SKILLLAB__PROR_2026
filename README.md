@@ -69,6 +69,7 @@ By the final review, this README should clearly show:
 | `Yogesh Thankar`  | `Project Implementation`   | `Coding`     | `Implementation, Testing, System Integration`    |
 
 ![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/gropphoto.jpeg?raw=true)
+Youtube Link: https://youtube.com/shorts/0SENdLTuPjc?si=RE0tEfSLlQKcFzbn
 
 ## 1.3 Project Title
 
