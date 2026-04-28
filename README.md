@@ -245,8 +245,6 @@ There is no mobile or web app involved. The system works entirely through IR rem
 
 ## 6.3 Input / Output Map
 
-## 6.3 Input / Output Map
-
 | System Part | Type | What It Does |
 |-------------|------|--------------|
 | `IR Remote` | `Input` | `Sends user commands wirelessly (button presses)` |
@@ -540,8 +538,6 @@ What is the single biggest uncertainty in your project at this stage?
 | `Servo Movement`    | `Move arm in all directions`                                              | `Smooth and stable motion without jitter`                                                 
 | `Power Stability`    | `Run all servos together`                                              | `No reset or power drop`                                                   |
                        
-## 15.2 Testing and Debugging Log
-
 ### 15.2 Testing and Debugging Log
 
 | Time | Problem Found | Type | What You Tried | Result | Next Action |
