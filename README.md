@@ -165,23 +165,23 @@ Check all that apply.
 
 - [x] Sensor-based
 
-- [] App-connected
+- [⛌] App-connected
 
 - [x] Motorized
 
-- [] Sound-based
+- [⛌] Sound-based
 
-- [] Light-based
+- [⛌] Light-based
 
-- [] Screen/UI-based
+- [⛌] Screen/UI-based
 
 - [x] Fabricated structure
 
-- [] Game logic based
+- [⛌] Game logic based
 
-- [] Installation
+- [⛌] Installation
 
-- [] Other:N/A
+- [⛌] Other:N/A
 
 ## 6.2 High-Level System Description
 
