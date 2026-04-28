@@ -114,7 +114,6 @@ List what inspired the project.
 What makes your project original?
 
 -->The originality of this project lies in combining industrial robotic arm concepts with a low-cost, hands-on, and interactive setup using cardboard and simple components. Instead of focusing purely on automation, the system emphasizes user interaction through an IR remote, turning it into a controllable experience. The use of accessible materials like cardboard and basic electronics makes it a playful yet functional prototype that bridges the gap between industrial machinery and creative experimentation.
-**Response:**  
 
 
 ---
