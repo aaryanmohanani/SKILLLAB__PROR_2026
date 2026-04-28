@@ -159,29 +159,29 @@ What features are nice to have but not essential?
 
 Check all that apply.
 
-- [x] Electronics-based
+- [✓] Electronics-based
 
-- [ ] Mechanical
+- [✓] Mechanical
 
-- [x] Sensor-based
+- [✓] Sensor-based
 
 - [x] App-connected
 
-- [x] Motorized
+- [✓] Motorized
 
-- [ ] Sound-based
+- [x] Sound-based
 
 - [x] Light-based
 
 - [x] Screen/UI-based
 
-- [x] Fabricated structure
+- [✓] Fabricated structure
 
 - [x] Game logic based
 
 - [x] Installation
 
-- [ ] Other:
+- [x] Other:N/A
 
 ## 6.2 High-Level System Description
 
