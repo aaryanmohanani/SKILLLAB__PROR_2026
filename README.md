@@ -126,10 +126,6 @@ What makes your project original?
 
 As the user continues interacting, they begin to understand how each control affects the arm’s motion, gaining a sense of precision and coordination. The experience becomes engaging as the user tries to mimic real industrial painting movements, adjusting angles and positions for better control. By the end of the interaction, the user not only enjoys controlling the robotic arm but also gains insight into how automation works in industrial environments, making the system both educational and interactive.
 
-                                                  |
-
-
-
 ---
 
 # 5. Definition of Success
