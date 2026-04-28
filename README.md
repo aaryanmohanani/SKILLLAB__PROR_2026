@@ -461,9 +461,17 @@ All documentation will be maintained in a shared GitHub repository, where update
 
 ## 12.2 Task Breakdown
 
-| Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
-| ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      | `[Finalize concept]`    | `[Both]` | `2`             | `1st April`  | `None`     | `Done` |
+| Task ID | Task                         | Owner     | Estimated Hours | Deadline   | Dependency        | Status |
+| ------- | ---------------------------- | --------- | --------------- | ---------- | ----------------- | ------ |
+| T1      | Project Planning & Concept   | Aaryan    | 1               | Hour 1     | None              | Done   |
+| T2      | Component Selection (BOM)    | Hussain   | 1               | Hour 1     | T1                | Done   |
+| T3      | Electronics Setup            | Yogesh    | 2               | Hour 2-3   | T2                | Done   |
+| T4      | Mechanical Build             | Jaisingh  | 2               | Hour 4     | T2                | Done   |
+| T5      | Wiring & Integration         | Aaryan    | 1               | Hour 5     | T3, T4            | Done   |
+| T6      | Coding & Control Logic       | Hussain   | 2               | Hour 6     | T3                | Done   |
+| T7      | Testing & Debugging          | Yogesh    | 1               | Hour 7     | T5, T6            | Done   |
+| T8      | Final Assembly & Finishing   | Jaisingh  | 1               | Hour 8     | T7                | Done   |
+| T9      | Documentation & Reporting    | Aaryan    | 1               | Hour 8     | All               | Done   |
 
 
 ## 12.3 Responsibility Split
