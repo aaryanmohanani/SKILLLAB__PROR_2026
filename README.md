@@ -68,6 +68,8 @@ By the final review, this README should clearly show:
 | `Jaisingh Sangtani` | `Coding` | `Project Implementation`  | `Programming, Logic Building, Debugging`|
 | `Yogesh Thankar`  | `Project Implementation`   | `Coding`     | `Implementation, Testing, System Integration`    |
 
+![image alt](https://github.com/aaryanmohanani/SKILLLAB__PROR_2026_RoboForge/blob/main/images/gropphoto.jpeg?raw=true)
+
 ## 1.3 Project Title
 
 `"IR-Remote Controlled Robotic Arm For Painting Applications in the Industry (Spray Paint/Normal Painting) using RP2040"`
