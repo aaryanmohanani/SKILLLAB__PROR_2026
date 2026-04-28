@@ -320,9 +320,7 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform                | Purpose                                        |
 | ------------------------------ | ---------------------------------------------- |
-| `[MicroPython]`                | `Control ESP32`                                |
-| `[Python/PyGame/OpenCV]`       | `Track markers, game logic, create projection` |
-| `[Fusion/Blender/Illustrator]` | `[Prototyping structure]`                      |
+| `Arduino IDE`                | `Used for programming the RP2040 microcontroller, controlling servo motors, and implementing IR remote-based robotic arm movement`                                |
 |                                |                                                |
 
 ## 10.2 Software Logic
