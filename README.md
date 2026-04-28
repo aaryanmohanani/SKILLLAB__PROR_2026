@@ -550,14 +550,6 @@ Expected outcomes:
 
 ## 14.1 Risk Register
 
-## 14. Risks and Unknowns
-
-### 14.1 Risk Register
-
-## 14. Risks and Unknowns
-
-### 14.1 Risk Register
-
 | Risk | Type | Likelihood | Impact | Mitigation Plan | Owner |
 |------|------|-----------|--------|------------------|--------|
 | `IR signal not detected properly` | `Technical` | `Medium` | `Medium` | `Ensure proper alignment, avoid obstacles, test range before demo` | `Jaisingh Sangtani` |
