@@ -341,12 +341,12 @@ Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
 `[Upload image and link here]`
-<img width="867" height="1156" alt="" src="" />
+<img width="867" height="1156" alt="image" src="ckt diagram.jpeg" />
 
 
 # 9. Power Plan
 
-| Question         | Response                                                                                                                                          |
+| Question         | Response                                                                                                                                          |"
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Power source     | `External 5V Power Supply`                                                                                                                           |
 | Voltage required | `5V for servo motors and RP2040 (via USB or regulated supply)`                                                                  |
