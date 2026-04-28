@@ -287,12 +287,21 @@ Add a sketch with labels showing:
 
 Describe the main electrical connections.
 
-**Response:**  
-`The ESP32 is connected to the motor driver (L298N) using four GPIO pins (18,19; 22,23) to control motor direction (IN1, IN2, IN3, IN4). Two PWM-capable pins (ENA and ENB; 25 and 26) are connected to control the speed of each motor.
+The RP2040 (Shrike Lite) microcontroller is used as the main controller for the robotic arm. The SG90 and MG996R servo motors are connected directly to the GPIO pins of the RP2040 through the IO shield.
 
-The motors are connected to the output terminals of the motor driver. The motor driver is powered directly by the battery pack (higher voltage), while the ESP32 receives regulated 5V from the buck converter.
+Each servo motor has three connections:
 
-All components share a common ground to ensure stable operation. The projector and camera are connected to the laptop, which handles tracking and game logic separately.`
+1)VCC (5V power)
+2)GND (Ground)
+3)Signal (connected to GPIO pins)
+
+The signal pins of the servos are connected to PWM-capable GPIO pins on the RP2040 to control their angular movement.
+
+An external 5V power supply is used to power the servo motors to ensure stable operation and prevent overloading the RP2040 board. The RP2040 is powered separately via USB.
+
+The IR receiver module is connected to one GPIO input pin of the RP2040 to receive signals from the IR remote. Based on the received signals, the microcontroller sends control signals to the servo motors.
+
+All components share a common ground to ensure proper signal reference and stable functioning of the system.
 
 ## 8.3 Circuit Diagram
 
@@ -336,23 +345,28 @@ Include:
 - communication logic,
 - reset behavior.
 
-**Response:**  
-`
+-->
 
-- **Startup behavior:**  
-  The ESP32 initializes motor pins, PWM control, and starts a WiFi access point with a web server. The laptop initializes camera input, tracking system, and projection mapping.
-- **Input handling:**  
-  Movement commands are received from the laptop (pygame sends http requests)
-- **Sensor reading:**  
-  The camera continuously captures frames, and OpenCV detects ArUco markers to determine the car’s position and orientation.
-- **Decision logic:**  
-  The system maps the car’s position into a virtual coordinate system and checks for nearby obstacles or collisions. If movement is valid, the command is allowed; if not, it is blocked or replaced with a feedback action (like a slight shake).
-- **Output behavior:**  
-  The ESP32 drives the motors using PWM signals to control speed and direction. The projector displays the updated game environment, including obstacles, targets, and feedback visuals.
-- **Communication logic:**  
-  The laptop sends HTTP requests (e.g., `/forward`, `/left`) to the ESP32 over WiFi. The ESP32 parses these commands and executes motor actions.
-- **Reset behavior:**  
-  If no command is received within a short timeout, the ESP32 stops the motors. The game resets when a level is completed or restarted.`
+1)Startup behavior:
+When powered on, the RP2040 initializes all servo motor pins and the IR receiver module. The servos are set to their default (home) positions to ensure a known starting state.
+
+2)Input handling:
+The system receives input from the IR remote. Each button press is detected by the IR receiver and decoded by the RP2040.
+
+3)Sensor reading:
+The IR receiver continuously reads incoming infrared signals and converts them into digital codes corresponding to specific buttons on the remote.
+
+4)Decision logic:
+The RP2040 compares the received IR code with predefined commands. Based on the button pressed, it decides which servo motor to move and in which direction (increase/decrease angle).
+
+5)Output behavior:
+The microcontroller sends PWM signals to the servo motors (SG90 and MG996R), controlling their angular movement to move different parts of the robotic arm (base, joint, gripper).
+
+6)Communication logic:
+There is no wireless or network communication. All control is done locally through the IR remote and receiver.
+
+7)Reset behavior:
+If no button is pressed, the arm holds its current position. A specific button can be assigned to reset all servos to their default (home) position.
 
 ## 10.3 Code Flowchart
 
@@ -382,11 +396,15 @@ Suggested sequence:
 
 | Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
 | -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
-| `[ESP32]`                        | `1`      | `Yes`   | `No`         | `0`            | `38 Pin ESP32`                | `[To control components]` |
-| `[Motor Driver]`                 | `[1]`    | `[Yes]` | `[No]`       | `0`            | `[LN296]`                     | `[To drive both motors]`  |
-| `[DC Motors and wheel]`          | `[2]`    | `[No]`  | `[Yes]`      | `[150]`        | `[BO Motors and 6 cm wheels]` | `[high torque motors]`    |
-| `[Buck Converter]`               | `[1]`    | `[No]`  | `[Yes]`      | `[75]`         |                               |                           |
-| `[Li-ion batteries with holder]` | `[1]`    | `[No]`  | `[Yes]`      | `[200]`        |                               |                           |
+| `RP2040 (Shrike Lite)`                        | `1`      | `Yes`   | `No`         | `400`            | `RP2040 Microcontroller`                | `Main controller for project` |
+| `IO Shield Board`                 | `1`    | `Yes` | `No`       | `0`            | `GPIO Expansion Shield`                     | `Easy wiring and stable connections`  |
+| `SG90 Servo Motor`          | `2`    | `No`  | `Yes`      | `200`        | `Micro Servo (180°)` | `Used for lightweight movements`    |
+| `MG996R Servo Motor`               | `1`    | `No`  | `Yes`      | `250`         |     High Torque Servo                          |           Used for heavy load / main motion                |
+| `IR Remote` | `1`    | `Yes`  | `No`      | `0`        |               Infrared Remote                |     User input control                      |
+| `IR Receiver`          | `1`    | `Yes`  | `No`      | `0`        | `IR Sensor Module` | `Receives signals from remote`    |
+| `Jumper Wires (M-M, F-M, F-F)`               | `1 Set Each Type`    | `Yes`  | `No`      | `0`         |    Connecting wires                           |         For all circuit connections                  |
+| `External Power Supply (5V)` | `1`    | `No`  | `Yes`      | `150`        |           5V Adapter / Battery                    |                   Stable power for servos        |
+
 
 ## 11.2 Material Justification
 
